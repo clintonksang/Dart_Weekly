@@ -1,44 +1,26 @@
 // Documentation
 
 
+![image](https://user-images.githubusercontent.com/55794066/134241981-d6c7f3f0-2b1d-40d2-bd0b-9d3bb6c6d586.png)
 
-**dart.academy/creating-objects-and-classes-in-dart-and-flutter**
 
 #Object-Oriented Programming
 
-defines an object as “any entity that has a defined boundary.” An object has the following −
+Object in OOP is an entity that has state and behavior. Here, state means Data and behavior means Functionality(methods/functions). It is created at runtime, in this case, communicates communicate together through methods. Each object can receive messages, send messages, and process data.
+![image](https://user-images.githubusercontent.com/55794066/134241943-38d78c26-f0ce-44bb-860e-edccf9c6d4bd.png)
 
-##State − Describes the object. The fields of a class represent the object’s state.
-
-##Behavior − Describes what an object can do.
-
-There are two steps in creating an object. 
-First, we define a class. A class is a template for an object. It is a blueprint which describes the state and behavior that the objects of the class all share. A class can be used to create many objects. Objects created at runtime from a class are called instances of that particular class. A new instance is created with the new keyword; since Dart 2.0, the keyword is optional.
-
-
-
-Identity − A unique value that distinguishes an object from a set of similar other objects. Two or more objects can share the state and behavior but not the identity.
-
-The period operator (.) is used in conjunction with the object to access a class’ data members.
-
-
+#Creating Objects
 ```
-class Student { 
-   void test_method() { 
-      print("This is a  test method"); 
-   } 
-   
-   void test_method1() { 
-      print("This is a  test method1"); 
-   } 
-}  
-void main()    { 
-   Student s1 = new Student(); 
-   s1.test_method(); 
-   s1.test_method1(); 
+void main (){
+//Type   objname    class
+   |        |         |
+Car     car =   Car();    //object
+print (person.color);
+}
+class Car{
+String color;
+String brand;
 }
 ```
 
-#Output 
-`This is a test method 
-This is a test method1`
+Done, This is the simplest dart object.
