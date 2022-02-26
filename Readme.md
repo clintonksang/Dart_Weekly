@@ -1,6 +1,7 @@
 
+## This is an open source project that aims at learning new dart concepts every week.
 
-Please Ensure:
+Steps:
 
 
 Clone repository  **https://github.com/clintonksang/Dart_Weekly.git**
