@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:routing/page2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-      
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -23,18 +21,10 @@ class MyApp extends StatelessWidget {
         // "hot reload" (press "r" in the console where you ran "flutter run",
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
-  //        Navigator.push(
-  //   context,
-  //   MaterialPageRoute(builder: (context) => const SecondRoute()),
-  // );
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      initialRoute: "/ "   ,
-   routes: {
-     "/" :  (context) => const MyHomePage(title: '',),
-     "/page2": (context) => const Page2()
-   },
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

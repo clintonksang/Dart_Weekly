@@ -1,26 +1,16 @@
  
-import 'package:flutter/material.dart';
-import 'package:routing/argsModel.dart';
-// A Widget that extracts the necessary arguments from
-// the ModalRoute.
-class ExtractArgumentsScreen extends StatelessWidget {
-  const ExtractArgumentsScreen({Key? key}) : super(key: key);
+// import 'package:flutter/material.dart';
+// import 'package:routing/argsModel.dart';
 
-  static const routeName = '/extractArguments';
 
-  @override
-  Widget build(BuildContext context) {
-    // Extract the arguments from the current ModalRoute
-    // settings and cast them as ScreenArguments.
-    final args = ModalRoute.of(context)!.settings.arguments as ScreenArguments;
+// class ExtractArguments extends StatelessWidget {
+//   const ExtractArguments({ Key? key }) : super(key: key);
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(args.title),
-      ),
-      body: Center(
-        child: Text(args.message),
-      ),
-    );
-  }
-}
+//      "/page2": (context) => const Page2()
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+      
+//     );
+//   }
+// }
