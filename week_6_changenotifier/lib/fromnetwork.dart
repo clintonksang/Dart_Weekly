@@ -28,14 +28,14 @@ class _IntermediateState extends State<Intermediate> {
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                TextDisplay(),
-                TextEditWidget(),
+              children:  <Widget>[
+                const TextDisplay(),
+                const TextEditWidget(),
                 ElevatedButton(
                   onPressed: () {
                     appState.fetchData();
                   },
-                  child: Text("Fetch Data  "),
+                  child: const Text("Fetch Data  "),
                 ),
                 ResponseDisplay(),
               ],
@@ -98,6 +98,8 @@ class _TextEditWidgetState extends State<TextEditWidget> {
 }
 
 class ResponseDisplay extends StatefulWidget {
+  const ResponseDisplay({Key? key}) : super(key: key);
+
   @override
   _ResponseDisplayState createState() => _ResponseDisplayState();
 }
@@ -110,7 +112,7 @@ class _ResponseDisplayState extends State<ResponseDisplay> {
     return Container(
       padding: const EdgeInsets.all(16.0),
       child: appState.isFetching
-          ? CircularProgressIndicator()
+          ? const CircularProgressIndicator() 
           : appState.getResponseJson() != null
               ? ListView.builder(
                   primary: false,
@@ -128,7 +130,7 @@ class _ResponseDisplayState extends State<ResponseDisplay> {
                     );
                   },
                 )
-              : Text("Press Button above to fetch data"),
+              : const Text("Press Button above to fetch data"),
     );
   }
 }
